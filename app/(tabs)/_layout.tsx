@@ -4,6 +4,7 @@ import { ImageBackground } from 'react-native';
 import { images } from '@/constants/images';
 import { icons } from '@/constants/icons';
 
+
 const _Layout = () => {
     return (
         <Tabs>
@@ -24,6 +25,7 @@ const _Layout = () => {
                          tintColor="#151312"
                          className="size-5"
                          />
+                         <Text>Home</Text>
                      </ImageBackground>
                      </>
                  )
