@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { Tabs } from 'expo-router';
+import { ImageBackground } from 'react-native';
+import { images } from '@/assets/images';
 
 const _Layout = () => {
     return (
@@ -8,7 +10,16 @@ const _Layout = () => {
              name="index"
              options={{
                  title: 'Home',
-                 headerShown: false }}
+                 headerShown: false,
+                 tabBarIcon: ({ focused }) => {
+                     <>
+                     <ImageBackground
+                      source={images.highlight}
+                      className="flex flex-row w-full flex-1 min-w-[112px]"
+                      />
+                     </>
+                 }
+            }}
             />
             <Tabs.Screen
                 name="profile"
