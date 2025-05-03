@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const MovieDetails = () => {
     return (
         <View>
-            <Text>Profile Page</Text>
+            <Text>Movie Details</Text>
         </View>
     )
 }
