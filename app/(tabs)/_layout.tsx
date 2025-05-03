@@ -17,7 +17,8 @@ const _Layout = () => {
                      <ImageBackground
                       source={images.highlight}
                       className="flex flex-row w-full
-                      flex-1 min-w-[112px] min-h-14 mt-4 justify-center">
+                      flex-1 min-w-[112px] min-h-14 mt-4 justify-center items-center
+                      round-full overflow-hidden">
                          <Image
                          source={icons.home}
                          tintColor="#151312"
