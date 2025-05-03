@@ -8,7 +8,26 @@ const _Layout = () => {
              name="index"
              options={{
                  title: 'Home',
-                 headerShown: false }}/>
+                 headerShown: false }}
+            />
+            <Tabs.Screen
+                name="profile"
+                options={{
+                    title: 'Profile',
+                    headerShown: false }}
+            />
+            <Tabs.Screen
+                name="saved"
+                options={{
+                    title: 'Saved',
+                    headerShown: false }}
+            />
+            <Tabs.Screen
+                name="search"
+                options={{
+                    title: 'Search',
+                    headerShown: false }}
+            />
         </Tabs>
     )
 }
