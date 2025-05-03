@@ -1,7 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import { Tabs } from 'expo-router';
 import { ImageBackground } from 'react-native';
-import { images } from '@/assets/images';
+import { images } from '@/constants/images';
+import { icons } from '@/constants/icons';
 
 const _Layout = () => {
     return (
@@ -11,14 +12,20 @@ const _Layout = () => {
              options={{
                  title: 'Home',
                  headerShown: false,
-                 tabBarIcon: ({ focused }) => {
+                 tabBarIcon: ({ focused }) => (
                      <>
                      <ImageBackground
                       source={images.highlight}
-                      className="flex flex-row w-full flex-1 min-w-[112px]"
-                      />
+                      className="flex flex-row w-full
+                      flex-1 min-w-[112px] min-h-14 mt-4 justify-center">
+                         <Image
+                         source={icons.home}
+                         tintColor="#151312"
+                         className="size-5"
+                         />
+                     </ImageBackground>
                      </>
-                 }
+                 )
             }}
             />
             <Tabs.Screen
