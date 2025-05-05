@@ -11,8 +11,8 @@ export default function SearchBar({ placeholder, onPress } : Props) {
       <View className="flex-row items-center bg-dark-200-">
           <Image source={icons.search} className="size-5" resizeMode="contain" tintColor="#ab8ff" />
           <TextInput
-              onPress={() => {}}
-              placeholder="Search"
+              onPress={onPress}
+              placeholder={placeholder}
               value=""
               onChangeText={() => {}}
               placeholderTextColor="#ab8ff"
